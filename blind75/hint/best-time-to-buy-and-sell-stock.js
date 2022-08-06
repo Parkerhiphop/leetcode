@@ -1,5 +1,7 @@
 /** @Note 7.01 & 8.04 都寫一堆判斷方向都錯誤 */
 
+const source = 'https://leetcode.com/problems/best-time-to-buy-and-sell-stock/';
+
 const solution1 = `
     概念：求陣列中最大公差，且要照順序求
     運用 Math.min & Math.max 的概念
@@ -13,6 +15,27 @@ const solution1 = `
     max = Math.max(max, prices[i] - min);
 
     -> 其實 min 就是 buyPrice, max 就是 profit;
+`;
+
+const solution2 = `
+  以第一天的價格為初始值 buyPrice
+  當前 profit 是 0
+
+  若 i 日的價格比 buyPrice 小，buyPrice 就要被更新
+  若 i 日的價格 - buyPrice 比過往的 profit 都要高，就更新 profit
+
+  有用到一個 else if
+  其實還是第一個用 min & max 的概念去求比較漂亮
+`;
+
+const mySolution = `
+  我的作法其實就是不要去管 sellPrice 和哪一天賣出 ，專心在 buyPrice & profit 的判斷，並用最大公差的方式出發，順序照著 loop 走其實不用想太多
+`;
+
+const ktSolution = `
+  概念上其實就跟 solution1 一樣，語法不同而已
+  Int.MAX_VALUE 當 minPrice 的初始值
+  minOf & maxOf 就跟 Math.max & Math.min 一樣
 `;
 
 var maxProfitSolution1 = function (prices) {
@@ -31,17 +54,6 @@ var maxProfitSolution1 = function (prices) {
   return max;
 };
 
-const solution2 = `
-  以第一天的價格為初始值 buyPrice
-  當前 profit 是 0
-
-  若 i 日的價格比 buyPrice 小，buyPrice 就要被更新
-  若 i 日的價格 - buyPrice 比過往的 profit 都要高，就更新 profit
-
-  有用到一個 else if
-  其實還是第一個用 min & max 的概念去求比較漂亮
-`;
-
 var maxProfit = function (prices) {
   let buyPrice = prices[0];
   let profit = 0;
@@ -55,16 +67,6 @@ var maxProfit = function (prices) {
 
   return profit;
 };
-
-const mySolution = `
-  我的作法其實就是不要去管 sellPrice 和哪一天賣出 ，專心在 buyPrice & profit 的判斷，並用最大公差的方式出發，順序照著 loop 走其實不用想太多
-`;
-
-const ktSolution = `
-  概念上其實就跟 solution1 一樣，語法不同而已
-  Int.MAX_VALUE 當 minPrice 的初始值
-  minOf & maxOf 就跟 Math.max & Math.min 一樣
-`;
 
 // class Solution {
 //   fun maxProfit(prices: IntArray): Int {

@@ -1,3 +1,5 @@
+const source = 'https://leetcode.com/problems/contains-duplicate/';
+
 const mySolution1 = 'Hash map but use fixed number to return true';
 
 const mySolution2 = 'Hash Map like twoSum';
