@@ -12,7 +12,6 @@ var number = 9;
 var result = number.toString(2);	// result 為 1001
 ```
 
-
 ## Operator
 
 「Javascript中的位元運算子](https://ithelp.ithome.com.tw/articles/10129361)
@@ -94,3 +93,8 @@ ex:
 `||` logical OR
 
 `??` Nullish Coalescing Operator
+
+## 有號數字表示法 — 2 的補數、1 的補數 與 符號大小
+- https://notfalse.net/20/signed-number-representations
+- https://ithelp.ithome.com.tw/articles/10229609
+- https://zh.wikipedia.org/zh-tw/%E6%B1%89%E6%98%8E%E6%9D%83%E9%87%8D
