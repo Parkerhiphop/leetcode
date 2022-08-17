@@ -71,3 +71,15 @@ const solution2 = `
     
 //     return count
 // };
+
+const solution3 = `
+  (same as my very first idea.)
+  The key is to use Number() convert n first.
+  Use .toString(2) to get the binary representation string of n.
+  Instead of using split and reduce to get the sum. Using replace and Regex to remove 0.
+  Finally, use string.prototype.length!
+`;
+
+var hammingWeight = function(n) {
+  return Number(n).toString(2).replace(/0/g, '').length
+};
