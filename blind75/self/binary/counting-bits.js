@@ -4,7 +4,7 @@ const mySolution = `
   Then, loop and push the value from getNumOf1bits(i).
 `;
 
-const countBits = function(n) {
+var countBits = function(n) {
   function getNumOf1bits(x) {
       let count = 0;
       
@@ -31,18 +31,18 @@ const mostVotedSolution = `
   see https://leetcode.com/problems/counting-bits/discuss/1808435/Python-Javascript-Very-Deep-Explanation 
 `;
 
-// const countBits = (n) => {
-//   let result = Array(n + 1).fill(0);
-//   let offset = 1;
-//   for (let i = 1; i < n + 1; i++) {
-//     if (offset * 2 === i) {
-//       offset = i;
-//     }
-//     result[i] = 1 + result[i - offset];
-//   }
+var countBits = function(n) {
+  let result = Array(n + 1).fill(0);
+  let offset = 1;
+  for (let i = 1; i < n + 1; i++) {
+    if (offset * 2 === i) {
+      offset = i;
+    }
+    result[i] = 1 + result[i - offset];
+  }
 
-//   return result;
-// };
+  return result;
+};
 
 
 const intuitiveSolution = `
@@ -50,10 +50,10 @@ const intuitiveSolution = `
   Instead of using getNumOf1bits(n), converting the binary representation of i to string then get the number of 1's in one line. 
 `;
 
-// const countBits = function(num) {
-//   let bits = [];
-//   for (let i = 0; i <= num; i++)
-//       // remove 0 from bits
-//       bits.push(Number(i).toString(2).replace(/0/g, '').length);
-//   return bits;
-// };
+var countBits = function(n) {
+  let bits = [];
+  for (let i = 0; i <= num; i++)
+      // remove 0 from bits
+      bits.push(Number(i).toString(2).replace(/0/g, '').length);
+  return bits;
+};

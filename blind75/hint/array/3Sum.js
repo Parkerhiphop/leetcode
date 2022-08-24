@@ -90,23 +90,23 @@ const mySolution = `
   Try the violent solution, and it doesn't work out.
 `;
 
-// var threeSum = function(nums) {
-//   let answer = [];
-//   for (let i = 0; i < nums.length; i++) {
-//       for (let j = 1; j < nums.length; j++) {
-//           for (let k = 2; k < nums.length; k++) {
-//               if (i!==j && i!==k && j !== k) {
-//                   let sum = nums[i] + nums[j] + nums[k];
-//                   console.log(i,j,k,sum);
-//                   if (sum === 0) {
-//                       answer.push([nums[i],nums[j],nums[k]]);
-//                   }
-//               }
-//           }
-//       }
-//   }
-//   return answer;
-// };
+var threeSum = function(nums) {
+  let answer = [];
+  for (let i = 0; i < nums.length; i++) {
+      for (let j = 1; j < nums.length; j++) {
+          for (let k = 2; k < nums.length; k++) {
+              if (i!==j && i!==k && j !== k) {
+                  let sum = nums[i] + nums[j] + nums[k];
+                  console.log(i,j,k,sum);
+                  if (sum === 0) {
+                      answer.push([nums[i],nums[j],nums[k]]);
+                  }
+              }
+          }
+      }
+  }
+  return answer;
+};
 
 const kotlinSolution = `
   The flow is like the JS.

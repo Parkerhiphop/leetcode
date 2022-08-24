@@ -34,25 +34,25 @@ const mySolution = `
   變化題沒過關ＱＱ
 `;
 
-// var maxProduct = function(nums) {
-//     let max = nums[0];
-//     let pre = nums[0];
+var maxProduct = function(nums) {
+    let max = nums[0];
+    let pre = nums[0];
     
-//     for (let i = 1; i < nums.length; i++) {
-//         if (pre * nums[i] >= 0) {
-//             pre = Math.max(nums[i], pre * nums[i]);            
-//             max = Math.max(max, pre)
-//         } else if (nums[i + 1] < 0) {
-//             pre *= nums[i];
-//             max = pre;
-//         } else {
-//             pre = nums[i];
-//             max = Math.max(pre, max)
-//         }
-//     }
+    for (let i = 1; i < nums.length; i++) {
+        if (pre * nums[i] >= 0) {
+            pre = Math.max(nums[i], pre * nums[i]);            
+            max = Math.max(max, pre)
+        } else if (nums[i + 1] < 0) {
+            pre *= nums[i];
+            max = pre;
+        } else {
+            pre = nums[i];
+            max = Math.max(pre, max)
+        }
+    }
     
-//     return max;
-// };
+    return max;
+};
 
 
 const kotlinSolution = `

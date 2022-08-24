@@ -36,29 +36,29 @@ const mySolution = `
   設定了 center, left, right, min 等太多變數把事情搞得太複雜惹
 `;
 
-// var findMin = function(nums) {
-//   let center = Math.ceil(nums.length / 2);
-//   let left = center - 1;
-//   let right = center + 1;
-//   let min = 0;
+var findMin = function(nums) {
+  let center = Math.ceil(nums.length / 2);
+  let left = center - 1;
+  let right = center + 1;
+  let min = 0;
 
-//   while (nums[center] > nums[left] || nums[center] > [right]) {
-//       min = Math.min(nums[left], nums[center], nums[right]);
+  while (nums[center] > nums[left] || nums[center] > [right]) {
+      min = Math.min(nums[left], nums[center], nums[right]);
       
-//       if (min === nums[left]) {
-//           center = Math.ceil(center / 2);
-//       }
+      if (min === nums[left]) {
+          center = Math.ceil(center / 2);
+      }
       
-//       if (min === nums[right]) {
-//           center = Math.ceil(center / 2) + center;
-//       }
+      if (min === nums[right]) {
+          center = Math.ceil(center / 2) + center;
+      }
       
-//       left = center - 1;
-//       right = center + 1;
-//   }
+      left = center - 1;
+      right = center + 1;
+  }
 
-//   return nums[center];
-// };
+  return nums[center];
+};
 
 const kotlinSolution = `
   完全照抄 JS ，只是寫法有點不一樣
