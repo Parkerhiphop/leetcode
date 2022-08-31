@@ -14,17 +14,15 @@ https://medium.com/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98/%E6%BC%94%E7%AE%97%E6%B3
 設定左右兩個指標，在適當情況與條件下，移動其中的一個或兩個指標，來找到標值或是做一些總和的計算。而兩個指標的方向可以是同方向，也可以是反方向移動，端看當下的情境需求。
 
 Examples
-1. Longest Substring Without Repeating Characters
+1. [Longest Substring Without Repeating Characters](/blind75//hint/string/longestSubstringWithoutRepeatingCharacters.js)
 2. Remove Duplicates from Sorted Array
 3. Remove Duplicates from Sorted Array II
 4. Two Sum II — Input array is sorted
 5. Minimum Size Subarray Sum
 6. Squares of a Sorted Array
 
-
-
 ---
-## 快慢指標
+## 快慢指標 Fast and Slow Pointer
 多用於 Linked-List 。
 
 透過 slow 與 fast 兩根指標，讓兩個指標保持一定的間隔規律，通常可以用於解決以下幾種問題：
@@ -60,8 +58,9 @@ Examples
 >   廣義的左右指標中的一種
 
 Examples
-1. Container with most water
-2. longest Repeating Character Replacement
+1. [Container with most water](/blind75//hint//array//container-with-most-water.js)
+2. [longest Repeating Character Replacement](/blind75//hint//string//longestRepeatingCharacterReplacement.md)
+3. [minimum Window Substring](/blind75/hint/string/minimumWindowSubstring.md)
 
 其實可以只使用一個 point 與 一個 window size 來實作，並不用真正使用到兩個指標。
 
