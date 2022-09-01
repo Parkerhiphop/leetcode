@@ -49,7 +49,7 @@ Examples
 當兩個 Fast and Slow Pointer 走的步數不一樣時，假如有一個循環的時候，兩個指標終究會遇上，就像賽跑被倒追一圈一樣類似的概念。
 
 Examples
-1. Linked List Cycle
+1. [Linked List Cycle](../blind75/hint/linked-list/linked-list-cycle.md)
 2. Linked List Cycle II
 
 
