@@ -1,5 +1,4 @@
-# Questions
->  https://leetcode.com/problems/linked-list-cycle/
+# [Questions](https://leetcode.com/problems/linked-list-cycle/)
 
 ## Solution: Fast and Slow Pointer
 
