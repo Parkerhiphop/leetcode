@@ -11,10 +11,7 @@
 3. 查表
 
 Examples
-1. [Fibonacci number](../blind75/hint/dp/fibonacci-number.md)
-2. [Climbing Stars](../blind75/hint/dp/climbing-stars.md)
-3. [Maximum Product Subarray](../blind75/hint/array/maximum-product-subarray.md)
-4. [Coin Change](../blind75/hint/dp/coin-change.md)
+1. [dp](../blind75/hint/dp/)
 
 ---
 ### How is a dynamic programming algorithm more efficient than the recursive algorithm while solving an LCS problem?
