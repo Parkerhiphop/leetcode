@@ -14,10 +14,26 @@ function ListNode(val, next) {
 
 ## Solution
 
-### Iterative
+### [Iterative](https://leetcode.com/problems/reverse-linked-list/discuss/313728/Javascript-ES6-less-code-solution)
 - Time: O(n)
 - Space: O(1)
 
+####  List Destructuring Assignment
+- Changes the pointers simultaneously
+```js
+var reverseList = function(head) {
+  let [prev, current] = [null, head];
+  while (current) {
+    [current.next, prev, current] = [prev, current, current.next]
+  }
+
+  return prev;
+}
+```
+
+#### Linear Assignment
+It won't work!
+- It change the pointers step by step so it gets wrong.
 ```js
 var reverseList = function(head) {
     let prev = null;
@@ -31,15 +47,22 @@ var reverseList = function(head) {
 };
 ```
 
-Destructuring Assignment
-```js
+It work
+- let `next` to ensures that we keep the reference to the next element, even after reassigning cur.next.
+```ts
 var reverseList = function(head) {
-  let [prev, current] = [null, head];
-  while (current) {
-    [current.next, prev, current] = [prev, current, current.next]
-  }
+    let prev = null;
+    let next = null;
+    let current = head;
 
-  return prev;
+    while (current) {
+        next = current.next;
+        current.next = prev;
+        prev = current;
+        current = next;
+    }
+
+    return prev;
 }
 ```
 
