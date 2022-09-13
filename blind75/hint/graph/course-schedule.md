@@ -234,7 +234,7 @@ var canFinish = function(numCourses, prerequisites) {
 };
 ```
 
-## Solution: BFS
+## Solution: BFS -> The slowest
 Reference: https://www.youtube.com/watch?v=rG2-_lgcZzo&feature=youtu.be
 
 ```js
