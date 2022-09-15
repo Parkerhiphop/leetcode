@@ -10,6 +10,20 @@ var insert = function(intervals, newInterval) {
     1 - If we have already added newInterval or the current interval ends before the new one starts
     2 - If newInterval ends before the current one starts
     3 - If there is an overlap that requires a merge
+
+    My explanation:
+    1. end < [0]
+        -> push(current)
+    2. [1] < start
+        -> push(newInterval)
+        -> null
+        -> push(current)
+    3 else
+        start <= 0 < end <= 1
+        0 <= start < 1 <= end
+        -> min([0], start) / max([1], end)
+    4. end > [0]
+        push at the end
     */
 
     for (const [start, end] of intervals) {

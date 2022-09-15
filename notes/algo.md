@@ -22,6 +22,21 @@ Examples
 6. Squares of a Sorted Array
 
 ---
+
+### Sliding Window
+>   廣義的左右指標中的一種
+
+Examples
+1. [Container with most water](/blind75//hint//array//container-with-most-water.js)
+2. [longest Repeating Character Replacement](/blind75//hint//string//longestRepeatingCharacterReplacement.md)
+3. [minimum Window Substring](/blind75/hint/string/minimumWindowSubstring.md)
+
+其實可以只使用一個 point 與 一個 window size 來實作，並不用真正使用到兩個指標。
+
+作法：用 window 內的所有 element 來解題，例如透過每回合操作 window 內的總和，來達到解題的目的。
+
+
+---
 ## 快慢指標 Fast and Slow Pointer
 多用於 Linked-List 。
 
@@ -52,16 +67,9 @@ Examples
 1. [Linked List Cycle](../blind75/hint/linked-list/linked-list-cycle.md)
 2. Linked List Cycle II
 
-
 ---
-# Sliding Window
->   廣義的左右指標中的一種
 
-Examples
+# Greedy Algorithm
+
+[Leetcode Questions](https://leetcode.com/tag/greedy/)
 1. [Container with most water](/blind75//hint//array//container-with-most-water.js)
-2. [longest Repeating Character Replacement](/blind75//hint//string//longestRepeatingCharacterReplacement.md)
-3. [minimum Window Substring](/blind75/hint/string/minimumWindowSubstring.md)
-
-其實可以只使用一個 point 與 一個 window size 來實作，並不用真正使用到兩個指標。
-
-作法：用 window 內的所有 element 來解題，例如透過每回合操作 window 內的總和，來達到解題的目的。
