@@ -2,7 +2,7 @@
 
 [Video](https://www.youtube.com/watch?v=zV3o4XVoU8M)
 
-<!-- TODO: understand this -->
+<!-- TODO: write it again -->
 ## [Solution: DFS + Recursion + DP](https://leetcode.com/problems/pacific-atlantic-water-flow/discuss/1126812/JS-Python-Java-C%2B%2B-or-Easy-DFS-Recursion-DP-Solution-w-Explanation)
 
 * Why Uint8Array?
