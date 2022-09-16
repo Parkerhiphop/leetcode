@@ -1,6 +1,6 @@
 # [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 
-## Solution
+## Solution: O(n)
 - 觀念都是先排序 start
 - 接著紀錄 previous interval
 - Iterate 時確認是哪一種
@@ -50,32 +50,14 @@ var merge = function(intervals) {
 };
 ```
 
-c [ 5, 7 ]
-p [ 4, 6 ]
-[ [ 1, 3 ], [ 4, 6 ] ]
----
-c [ 5, 7 ]
-p [ 4, 7 ]
-[ [ 1, 3 ], [ 4, 7 ] ]
-
-
-    console.log('c', cur) 
-              console.log('p', prev)
-      console.log(res)
-
-              console.log('---')
-            console.log('c', cur) 
-              console.log('p', prev)
-      console.log(res)
-
-
 ```js
-// without destructive 
 var merge = function(intervals) {
   if (!intervals.length) return intervals
   intervals.sort((a, b) => a[0] < b[0] ? -1 : 1)
   let prev = intervals.shift()
   let res = [prev]
+
+  /** without destructive  */ 
   for (const cur of intervals) {
     if (cur[0] <= prev[1]) {
       // 用 cur 的話
@@ -89,29 +71,23 @@ var merge = function(intervals) {
       prev = cur
     }
   }
+
+  /** with destructive  */ 
+  // for (const [start, end] of intervals) {
+  //   if (start <= prev[1]) {
+  //   //only replace end
+  //     prev[1] = Math.max(prev[1], end)
+  //     // res.at(-1) doesn't refer to prev (refer to end) -> need manually update
+  //     res.at(-1)[1] = prev[1]
+  //   } else {
+  //     // replace prev to current
+  //     res.push([start, end])
+  //     prev = [start, end]
+  //   }
+  // }
+
   return res
 };
-
-// with destructive 
-var merge = function(intervals) {
-  if (!intervals.length) return intervals
-
-  intervals.sort((a, b) => a[0] < b[0] ? -1 : 1)
-
-  let prev = intervals.shift()
-  let res = [prev]
-
-  for (const [start, end] of intervals) {
-    if (start <= prev[1]) {
-      prev[1] = Math.max(prev[1], end) // only replace end
-      res.at(-1)[1] = prev[1] // res.at(-1) doesn't refer to prev (refer to end) -> need manually update
-    } else {
-      res.push([start, end])
-      prev = [start, end] // replace prev to current
-    }
-  }
-  return res
-}
 ```
 
 ### NOTE: 為何需要用 `array.at(-1)` 而不能用 `array[-1]` 取最後一個值？
