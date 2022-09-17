@@ -1,5 +1,13 @@
 # [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 
+```
+[3,9,20,null,null,15,7]
+[3,9,20,null,null,15,7, 32, null, null, 19, null, null, null, 10]
+[1,2]
+[3,9,20,1,5,6,2,7,8,11,21]
+[3,4,5,-7,-6,null,null,-7,null,-5,null,null,null,-4]
+```
+
 ## Solution: DFS
 Add value bottom up
 - The deepest is 0.
@@ -13,12 +21,6 @@ var maxDepth = (root) => {
   return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1
 }
 ```
-
-[3,9,20,null,null,15,7]
-[3,9,20,null,null,15,7, 32, null, null, 19, null, null, null, 10]
-[1,2]
-[3,9,20,1,5,6,2,7,8,11,21]
-[3,4,5,-7,-6,null,null,-7,null,-5,null,null,null,-4]
 
 ## Solution: BFS
 
