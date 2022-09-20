@@ -11,7 +11,7 @@
 3. 查表
 
 Examples
-1. [dp](../blind75/hint/dp/)
+1. [dp](../blind75/dp/)
 
 ---
 ### How is a dynamic programming algorithm more efficient than the recursive algorithm while solving an LCS problem?

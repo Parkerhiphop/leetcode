@@ -14,7 +14,7 @@ https://medium.com/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98/%E6%BC%94%E7%AE%97%E6%B3
 設定左右兩個指標，在適當情況與條件下，移動其中的一個或兩個指標，來找到標值或是做一些總和的計算。而兩個指標的方向可以是同方向，也可以是反方向移動，端看當下的情境需求。
 
 Examples
-1. [Longest Substring Without Repeating Characters](/blind75//hint/string/longestSubstringWithoutRepeatingCharacters.js)
+1. [Longest Substring Without Repeating Characters](/blind75//string/longestSubstringWithoutRepeatingCharacters.js)
 2. Remove Duplicates from Sorted Array
 3. Remove Duplicates from Sorted Array II
 4. Two Sum II — Input array is sorted
@@ -27,9 +27,9 @@ Examples
 >   廣義的左右指標中的一種
 
 Examples
-1. [Container with most water](/blind75//hint//array//container-with-most-water.js)
-2. [longest Repeating Character Replacement](/blind75//hint//string//longestRepeatingCharacterReplacement.md)
-3. [minimum Window Substring](/blind75/hint/string/minimumWindowSubstring.md)
+1. [Container with most water](/blind75///array//container-with-most-water.js)
+2. [longest Repeating Character Replacement](/blind75///string//longestRepeatingCharacterReplacement.md)
+3. [minimum Window Substring](/blind75/string/minimumWindowSubstring.md)
 
 其實可以只使用一個 point 與 一個 window size 來實作，並不用真正使用到兩個指標。
 
@@ -64,7 +64,7 @@ Examples
 當兩個 Fast and Slow Pointer 走的步數不一樣時，假如有一個循環的時候，兩個指標終究會遇上，就像賽跑被倒追一圈一樣類似的概念。
 
 Examples
-1. [Linked List Cycle](../blind75/hint/linked-list/linked-list-cycle.md)
+1. [Linked List Cycle](../blind75/linked-list/linked-list-cycle.md)
 2. Linked List Cycle II
 
 ---
@@ -72,4 +72,4 @@ Examples
 # Greedy Algorithm
 
 [Leetcode Questions](https://leetcode.com/tag/greedy/)
-1. [Container with most water](/blind75//hint//array//container-with-most-water.js)
+1. [Container with most water](/blind75///array//container-with-most-water.js)
