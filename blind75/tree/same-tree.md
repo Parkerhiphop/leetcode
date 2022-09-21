@@ -1,11 +1,16 @@
 # [100. Same Tree](https://leetcode.com/problems/same-tree/)
 
+- 只檢查當前 node.val 然後不斷比對完整個數
+
 ## DFS
 ```js
 var isSameTree = (p, q) => {
   if (!p && !q) return true;
-
   if (!p || !q || p.val !== q.val) return false;
+
+  // Shorter Condition
+  // if (!p || !q) return !p && !q;
+  // if (p.val !== q.val) return false;
 
   return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
 }
