@@ -12,7 +12,7 @@
 - [x] [Binary](blind75/binary/)
 - [x] [DP](blind75/dp/)
 - [ ] [Graph](blind75/graph/) - 5
-- [ ] [Interval](blind75/interval/) - 2
+- [ ] [Interval](blind75/interval/) - 1
 - [ ] [Linked List](blind75/linked-list/) - 3
 - [x] [Matrix](blind75/matrix/)
 - [ ] [String](blind75/string/) - 7
