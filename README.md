@@ -14,6 +14,7 @@
   - ...
 - Medium: Mixed of at least two concepts or Variation of Easy's concept
   - Circular + DP: [House Robber 2](blind75/dp/house-robber-2.md)
+  - Advanced Hashmap: [Group Anagrams](blind75/string/group-anagrams.md)
 - Hard
   - ???
 
@@ -25,7 +26,7 @@
 - [ ] [Interval](blind75/interval/) - 1
 - [ ] [Linked List](blind75/linked-list/) - 3
 - [x] [Matrix](blind75/matrix/)
-- [ ] [String](blind75/string/) - 6
+- [ ] [String](blind75/string/) - 5
 - [x] [Tree](blind75/tree/)
 - [ ] [Heap](blind75/heap/) - 3
 
