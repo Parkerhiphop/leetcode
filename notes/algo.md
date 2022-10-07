@@ -45,6 +45,9 @@ Examples
 2. 找到 Linked-List 倒數第 K 個節點
 3. 判斷一個 Linked-List 有沒有循環
 
+Examples
+1. [meeting room 2](../blind75/interval/meeting-room-2.md)
+
 
 ### 找到 Linked-List 中心點
 當你有兩個指標同時移動，慢的一次走一步，快的一次走兩步，當 fast pointer 抵達尾端的時候， slow pointer 就會是在中間的位置。
