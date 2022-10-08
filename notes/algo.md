@@ -20,6 +20,7 @@ Examples
 4. Two Sum II — Input array is sorted
 5. Minimum Size Subarray Sum
 6. Squares of a Sorted Array
+7. [Valid Palindrome](../blind75/string/valid-palindrome.md)
 
 ---
 
