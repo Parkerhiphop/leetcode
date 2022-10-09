@@ -1,6 +1,41 @@
 # [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
 
-## Solution
+## [Solution: Iterative](https://leetcode.com/problems/merge-two-sorted-lists/discuss/524286/JS-Iterative-Recursive)
+- Time complexity: O(min(N,M))
+- Space complexity: O(1) Its about extra space. It use N space for result itself
+
+```js
+var mergeTwoLists = function(list1, list2) {
+    const head = new ListNode(null);
+    
+    let curr = head;
+    
+    // 其中一個被比較完了，剩下的直接在下面 .next merge 進去
+    while (list1 && list2) {
+        // curr.next 會影響到 head 的值
+        if (list1.val < list2.val) {
+            // next 會同步到 head
+            curr.next = list1;
+            list1 = list1.next;
+        } else {
+            // next 會同步到 head
+            curr.next = list2;
+            list2 = list2.next;
+        }
+        
+        curr = curr.next;
+    }
+    
+    // 一樣運用 curr.next = head.next 的概念，讓 head 繼承剩下的 list vals
+    curr.next = list1 || list2;
+
+    return head.next;
+}
+```
+
+## Solution: Recursive
+- Time complexity: O(min(N,M))
+- Space complexity: O(min(N,M))
 
 ```js
 var mergeTwoLists = function(list1, list2) {

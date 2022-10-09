@@ -18,8 +18,6 @@ Output: ["we", "say", ":", "yes"]
 Explanation:
 One possible encode method is: "we:;say:;:::;yes"
 
-
-
 - 解法就是在 string 中間
 - [Reference](https://www.youtube.com/watch?v=nn15nIlVNbs)
 

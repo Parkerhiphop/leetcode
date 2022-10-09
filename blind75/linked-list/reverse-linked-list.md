@@ -1,5 +1,6 @@
-# Question
-> https://leetcode.com/problems/reverse-linked-list/
+# [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
+
+- TODO: Fail Twice, Plz review it for the third times.
 
 ```js
 // Definition for singly-linked list.
@@ -32,34 +33,18 @@ var reverseList = function(head) {
 ```
 
 #### Linear Assignment
-It won't work!
-- It change the pointers step by step so it gets wrong.
-```js
-var reverseList = function(head) {
-    let prev = null;
-    let current = head;
-    while (current) {
-        current.next = prev;
-        prev = current;
-        current = current.next;
-    }
-    return prev;
-};
-```
-
-It work
-- let `next` to ensures that we keep the reference to the next element, even after reassigning cur.next.
 ```ts
 var reverseList = function(head) {
     let prev = null;
     let next = null;
-    let current = head;
+    let curr = head;
 
-    while (current) {
-        next = current.next;
-        current.next = prev;
-        prev = current;
-        current = next;
+    
+    while (curr) {
+        next = curr.next; // 2345 // 345
+        curr.next = prev; // important 1-> null // 2->1->null
+        prev = curr; // 1->null // 2->1->null
+        curr = next; // 2345 // 345
     }
 
     return prev;
@@ -74,12 +59,13 @@ var reverseList = function(head) {
 var reverseList = function(head) {
     if(!head) return null;
   
-    function reverse(prev, node) {
-        const next = node.next;
-        node.next = prev;
-        if(!next) return node;
-        return reverse(node, next);
+    function reverse(prev, curr) {
+        const next = curr.next;
+        curr.next = prev;
+        if (!next) return curr;
+        return reverse(curr, next);
     }
-    return reverse(null, head);
+    
+    return reverse(null, head)
 }
 ```
