@@ -1,7 +1,14 @@
 # Dynamic Programing（動態規劃）
-> 將問題分解成數個小問題，找到其中的規律，每次將小問題的答案記錄下來，當下一回來用到前一回合答案時就直接查表
-> 用空間換取時間的解題方式
+> 將問題分解成數個小問題，找到其中的規律，每次將小問題的答案記錄下來，當下一回來用到前一回合答案時就直接查表。
+> 用空間換取時間的解題方式（空間的部分就涉及到要選擇一個好的資料儲存方式）
 > = Divide-and-Conquer Method + Memoization
+
+Solving a complex problem
+By Breaking it down into a collection of simpler sub problems
+Solving each of those sub problems just once
+Storing their solutions
+Ideally, using a memory-based data structure. 
+- 2-Dimension Table
 
 情境：尋找有很多重疊子問題的情況、複雜的計算且有規律的問題
 
