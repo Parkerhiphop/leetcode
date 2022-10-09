@@ -25,11 +25,11 @@
 - [x] [DP](blind75/dp/)
 - [ ] [Graph](blind75/graph/) - 5
 - [x] [Interval](blind75/interval/)
-- [ ] [Linked List](blind75/linked-list/) - 3
+- [x] [Linked List](blind75/linked-list/)
 - [x] [Matrix](blind75/matrix/)
 - [x] [String](blind75/string/)
 - [x] [Tree](blind75/tree/)
-- [ ] [Heap](blind75/heap/) - 2
+- [ ] [Heap](blind75/heap/) - 3
 
 ## How to calculate Complexity?
 
