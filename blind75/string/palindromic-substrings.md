@@ -82,21 +82,21 @@ var countSubstrings = function(s) {
 ```js
 const countSubstrings = function(s) {
     let count = 0;
-    const dp = new Array(s.length).fill(new Array(s.length).fill(0));
+    const dp = [...Array(s.length)].map((e) => Array(s.length).fill(0));
     
     // go through all substring lengths
     for (let l = 0; l < s.length; l++) {
         // get all substrings of those lengths
         for (let i = 0; i + l < s.length; i++) {
             // j is left pointer plus length
-            const j = i + 1;
+            const j = i + l;
 
             if (l === 0) {
                 // we're on the diagonal, everything is palindrome
                 dp[i][j] = 1;
                 count++;
             } else if (l === 1) {
-                // only check if charactets at end are same.
+                // only check if characters at end are same.
                 if (s.charAt(i) === s.charAt(j)) {
                     dp[i][j] = 1;
                     count++;

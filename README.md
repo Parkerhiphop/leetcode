@@ -19,16 +19,17 @@
   - ???
 
 ## Blind75 Check list
+> 在 notes/__.md 中整理 Blind75 這些題目會用到的演算法跟技巧（如： string.md -> string 使用到 hashmap, two pointer, dp, greedy 並在哪些題目 JOHN）
 - [x] [Array](blind75/array/)
 - [x] [Binary](blind75/binary/)
 - [x] [DP](blind75/dp/)
 - [ ] [Graph](blind75/graph/) - 5
-- [ ] [Interval](blind75/interval/) - 1
+- [x] [Interval](blind75/interval/)
 - [ ] [Linked List](blind75/linked-list/) - 3
 - [x] [Matrix](blind75/matrix/)
-- [ ] [String](blind75/string/) - 5
+- [x] [String](blind75/string/)
 - [x] [Tree](blind75/tree/)
-- [ ] [Heap](blind75/heap/) - 3
+- [ ] [Heap](blind75/heap/) - 2
 
 ## How to calculate Complexity?
 
