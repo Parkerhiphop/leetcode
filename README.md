@@ -1,12 +1,6 @@
 # Leetcode
 
-- [Blind75 Reference](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions)
-
-- 未來可能會以概念區分來整理成文章
-    - ex: array，有 a,b,c,d,e… 這些題目，要能把他們全部解完會需要懂 x,y,z,… 的概念，其他 Binary, DP, ... 以此類推。
-    - (md file 是先行無修版。)
-    - 可以參考 Type Challenge 那個做成一個 challenge & solution list！
-
+- [Environment](https://support.leetcode.com/hc/en-us/articles/360011833974-What-are-the-environments-for-the-programming-language)
 ## Level of Leetcode
 - Easy: One Concept
   - hashmap: [Valid Anagram](blind75/string/valid-anagram.md)
@@ -18,11 +12,13 @@
 - Hard
   - ???
 
-## Blind75 Check list
+## [Blind75](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions) Check list
 > 在 notes/__.md 中整理 Blind75 這些題目會用到的演算法跟技巧（如： string.md -> string 使用到 hashmap, two pointer, dp, greedy 並在哪些題目 JOHN）
 > Blind75 就像是講義、例題
 > 第一次：先求解得出來、能慢慢判斷出題目可以使用哪些演算法跟資料結構來解，或是至少看得懂詳解。
 > 第二次：開始能關注 TC / SC，並訓練自己獨立解題。
+> DEMO: 可以參考 Type Challenge 那個做成一個 challenge & solution list！
+
 - [x] [Array](blind75/array/)
 - [x] [Binary](blind75/binary/)
 - [x] [DP](blind75/dp/)
@@ -32,7 +28,7 @@
 - [x] [Matrix](blind75/matrix/)
 - [x] [String](blind75/string/)
 - [x] [Tree](blind75/tree/)
-- [ ] [Heap](blind75/heap/) - 2
+- [ ] [Heap](blind75/heap/) - 1
 
 ## How to calculate Complexity?
 
