@@ -1,6 +1,11 @@
 # Leetcode
 
+- Submit 前確認 null, [] 或 值很少的情況。
+
 - [Environment](https://support.leetcode.com/hc/en-us/articles/360011833974-What-are-the-environments-for-the-programming-language)
+
+- [Reference](https://github.com/AnasImloul/Leetcode-solutions/)
+
 ## Level of Leetcode
 - Easy: One Concept
   - hashmap: [Valid Anagram](blind75/string/valid-anagram.md)
@@ -22,13 +27,13 @@
 - [x] [Array](blind75/array/)
 - [x] [Binary](blind75/binary/)
 - [x] [DP](blind75/dp/)
-- [ ] [Graph](blind75/graph/) - 5
+- [ ] [Graph](blind75/graph/) - 3
 - [x] [Interval](blind75/interval/)
 - [x] [Linked List](blind75/linked-list/)
 - [x] [Matrix](blind75/matrix/)
 - [x] [String](blind75/string/)
 - [x] [Tree](blind75/tree/)
-- [ ] [Heap](blind75/heap/) - 1
+- [x] [Heap](blind75/heap/)
 
 ## How to calculate Complexity?
 
