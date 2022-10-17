@@ -6,6 +6,17 @@
 
 - [Reference](https://github.com/AnasImloul/Leetcode-solutions/)
 
+[About coding, growth and immigration](https://leetcode.com/discuss/career/217361/about-coding-growth-and-immigration)
+In term of "solving" a problem, there are several levels we need to pursue:
+
+(1) "Accepted": means that you can solve a given problem, coding it up, get "accepted";
+
+(2) "Accepted anyway": means that you can solve the problem given some restrictions (e.g. can you solve it using divide & conquer ? ) and get accepted;
+
+(3) "Analysis": means to analyze time & space, respond to a broader concept and view, solving even more challenging problems (like ones involving Distributed, Large-scale systems).
+
+After accomplishing these levels for 100~200 problems, I am sure that you can crack most interviews no matter what :-) !
+
 ## Level of Leetcode
 - Easy: One Concept
   - hashmap: [Valid Anagram](blind75/string/valid-anagram.md)
