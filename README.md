@@ -43,17 +43,24 @@ After accomplishing these levels for 100~200 problems, I am sure that you can cr
 > 第二次：開始能關注 TC / SC，並訓練自己獨立解題。
 > 
 > DEMO: 可以參考 Type Challenge 那個做成一個 challenge & solution list！
+> 
+> Note 時，在各個題目下面放 #relativeTopic ，/notes 裡面只要放幾個經典題舉例就好（？）
 
-- [x] [Array](blind75/array/)
-- [x] [Binary](blind75/binary/)
-- [x] [DP](blind75/dp/)
-- [ ] [Graph](blind75/graph/) - 3
-- [x] [Interval](blind75/interval/)
-- [x] [Linked List](blind75/linked-list/)
-- [x] [Matrix](blind75/matrix/)
-- [x] [String](blind75/string/)
-- [x] [Tree](blind75/tree/)
-- [x] [Heap](blind75/heap/)
+| Topics                              | Solve  | Note  |   |   |
+|-------------------------------------|----|---|---|---|
+| [Array](blind75/array/)             | ✅  | ❌  |   |   |
+| [Binary](blind75/binary/)           | ✅  | ❌  |   |   |
+| [DP](blind75/dp/)                   | ✅  | ❌  |   |   |
+| [Graph](blind75/graph/)             | -3  | ❌  |   |   |
+| [Interval](blind75/interval/)       | ✅  | ❌  |   |   |
+| [Linked List](blind75/linked-list/) | ✅  | ❌  |   |   |
+| [Matrix](blind75/matrix/)           | ✅  | ❌  |   |   |
+| [String](blind75/string/)           | ✅  | ❌  |   |   |
+| [Tree](blind75/tree/)               | ✅  | ❌  |   |   |
+| [Heap](blind75/heap/)               | ✅  | ❌  |   |   |
+
+
+
 
 ## How to calculate Complexity?
 
