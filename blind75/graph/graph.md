@@ -37,7 +37,7 @@ Search Steps
 
 https://haogroot.com/2020/12/13/topological-sort-leetcode/
 
-![DAG SAMPLE](../assets/DAG-sample.jpeg)
+![DAG SAMPLE](../../assets/DAG-sample.jpeg)
 
 ## [Adjacency List](https://www.programiz.com/dsa/graph-adjacency-list)
 An adjacency list represents a graph as an array of linked lists.

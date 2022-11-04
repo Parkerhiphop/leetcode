@@ -1,11 +1,18 @@
 # Leetcode
 
+Hello, this is my note repo of leetcode from 0 to now.
+這裡紀錄了我的解題思路和想法，也順道整理了一些觀念跟筆記，希望對大家有幫助！
+有任何問題也歡迎開 issues 告訴我
+
 - [Environment](https://support.leetcode.com/hc/en-us/articles/360011833974-What-are-the-environments-for-the-programming-language)
 
 - [Solutions Reference](https://github.com/AnasImloul/Leetcode-solutions/)
 
 - [Topic Wise](https://leetcode.com/discuss/study-guide/1612475/all-leetcode-discuss-lists-and-my-lists-so-far-topic-wisedifficulty-wise)
   - TODO: Organize my notes using the list.
+
+- [程式解題新手入門注意事項](https://blog.techbridge.cc/2019/11/02/before-start-leetcode/)
+  - TODO: Read it.
 
 - Tech: Submit 前確認 null, [] 或 值很少的情況。
 
@@ -46,26 +53,28 @@ After accomplishing these levels for 100~200 problems, I am sure that you can cr
 > 
 > Note 時，在各個題目下面放 #relativeTopic ，/notes 裡面只要放幾個經典題舉例就好（？）
 
-| Topics                              | Solve  | Note  |   |   |
-|-------------------------------------|----|---|---|---|
-| [Array](blind75/array/)             | ✅  | ❌  |   |   |
-| [Binary](blind75/binary/)           | ✅  | ❌  |   |   |
-| [DP](blind75/dp/)                   | ✅  | ❌  |   |   |
-| [Graph](blind75/graph/)             | -3  | ❌  |   |   |
-| [Interval](blind75/interval/)       | ✅  | ❌  |   |   |
-| [Linked List](blind75/linked-list/) | ✅  | ❌  |   |   |
-| [Matrix](blind75/matrix/)           | ✅  | ❌  |   |   |
-| [String](blind75/string/)           | ✅  | ❌  |   |   |
-| [Tree](blind75/tree/)               | ✅  | ❌  |   |   |
-| [Heap](blind75/heap/)               | ✅  | ❌  |   |   |
-
-
+| Topics                              | Solved | Noted  | 
+|-------------------------------------|-----|----|
+| [Array](blind75/array/array.md)             | ✅  | ❌  | 
+| [String](blind75/string/string.md)           | ✅  | ❌  | 
+| [Linked List](blind75/linked-list/linked-list.md) | ✅  | ❌  | 
+| [DP](blind75/dp/dynamic-programming.md)                   | ✅  | ❌  | 
+| [Binary](blind75/binary/binary.md)           | ✅  | ❌  | 
+| [Interval](blind75/interval/interval.md)       | ✅  | ❌  | 
+| [Matrix](blind75/matrix/matrix.md)           | ✅  | ❌  | 
+| [Tree](blind75/tree/tree.md)               | ✅  | ❌  | 
+| [Graph](blind75/graph/graph.md)             | -3  | ❌  | 
+| [Heap](blind75/heap/heap.md)               | ✅  | ❌  | 
 
 
 ## How to calculate Complexity?
+
+https://yschen25.blogspot.com/2022/02/coding-interview.html
 
 ### Time Complexity
 
 
 ### Space Complexity
 
+## Reference
+- [14 Patterns to Ace Any Coding Interview Question | HackerNoon](https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed)

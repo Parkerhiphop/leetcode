@@ -1,6 +1,5 @@
 # [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 
-
 - 寫超久，自以為簡單版的 [valid anagram](valid-anagram.md) 解得出來，這個就解得出來
 - 結果寫超醜超久又沒解出來
 - 自己對 hash map 的變化終究還不夠熟悉
@@ -70,6 +69,7 @@ const groupAnagrams = function(strs) {
 };
 ```
 
+### Logs
 ```
 ["eat","tea","ate", "tan","nat","bat"]
 

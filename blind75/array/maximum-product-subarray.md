@@ -2,24 +2,26 @@
 
 ## Solution: DP
 ```js
-let max = nums[0];
-const dpMax = [nums[0]];
-const dpMin = [nums[0]];
+var maxProduct = function(nums) {
+    let max = nums[0];
+    const dpMax = [nums[0]];
+    const dpMin = [nums[0]];
 
-for (let i = 1; i < nums.length; i++) {
-    current = nums[i];
-    currentMax = current * dpMax[i - 1];
-    currentMin = current * dpMin[i - 1];
-    
-    // max 需要跟 min 比較是因為有負數的情境
-    // min 需要跟 max 比較也是同理
-    dpMax[i] = Math.max(current, currentMax, currentMin)
-    dpMin[i] = Math.min(current, currentMax, currentMin)
+    for (let i = 1; i < nums.length; i++) {
+        current = nums[i];
+        currentMax = current * dpMax[i - 1];
+        currentMin = current * dpMin[i - 1];
         
-    max = Math.max(max, dpMax[i])
-}
+        // max 需要跟 min 比較是因為有負數的情境
+        // min 需要跟 max 比較也是同理
+        dpMax[i] = Math.max(current, currentMax, currentMin)
+        dpMin[i] = Math.min(current, currentMax, currentMin)
+            
+        max = Math.max(max, dpMax[i])
+    }
 
-return max;
+    return max;
+}
 ```
 
 ## Solution: 單純紀錄值並比較

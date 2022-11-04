@@ -9,7 +9,7 @@
 var isValid = function(s) {    
     let arr = [s[0]]; // could rename to 'stack'
     
-    // Use hashmap is better (see below).
+    // Use object is better (see below).
     let brackets = [
         ['[',']'],
         ['{','}'],

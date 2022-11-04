@@ -1,13 +1,13 @@
-# Basic
+# Data Structures
+> Explain with JS by default.
+
+https://adrianmejia.com/data-structures-time-complexity-for-beginners-arrays-hashmaps-linked-lists-stacks-queues-tutorial/
 
 ## Queue
 - BFS Solution of [tree](/notes/tree.md)
 
 ## Stack
 - BFS Solution of [tree](/notes/tree.md)
-
-
-# Advanced
 
 ## Trie
 A trie (pronounced as "try") or prefix tree is a tree data structure used to efficiently store and retrieve keys in a dataset of strings.
