@@ -34,3 +34,4 @@ In many cases, two pointers can help you find a solution with better space or ru
 
 ## Fast and Slow Pointer
 
+1. [Remove Duplicates from Sorted Array](../../daily/array/removeDuplicatesFromSortedArray.md)
